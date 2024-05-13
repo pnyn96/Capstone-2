@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: yashudeploy
+  labels:
+    app: env
+spec:
+  replicas: 3
+  selector:
+    horse: goat
+  template:
+    metadata:
+      labels:
+        horse: goat
+    spec:
+      containers:
+      - name: yashucontainer
+        image: yashu7862/phil
+        ports:
+        - containerPort: 80
