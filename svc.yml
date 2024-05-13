@@ -4,7 +4,7 @@ metadata:
   name: yashuservice
 spec:
   type: NodePort
-  port:
+  ports:
   - targetPort: 80
     port: 80
     nodePort: 30009
